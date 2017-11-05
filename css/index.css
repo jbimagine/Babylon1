@@ -1,0 +1,204 @@
+   /*main css */
+   html,
+body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    
+}
+
+#logo {
+    float: left;
+    /* display: inline-block; */
+    
+    margin-top: 10px;
+    width: 25px;
+}
+
+.clear {
+    clear: both;
+}
+
+#nav {
+    width: 100%;
+    
+}
+.menu {
+    background-color: #333;
+    height: 50px;
+}
+.menu ul{
+    list-style: none;
+    padding: 0;
+    overflow: hidden;
+    margin: 0;
+  }
+
+  .menu li{
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 1.2em;
+      line-height: 50px;
+      height: 50px;
+      width: 150px;
+      float:right;
+  }
+
+  .menu li a {
+      display: block;
+      color: white;
+      text-align: center;
+      text-decoration:none;
+  }
+
+  .menu li a:hover {
+      background-color:  #4a698d;
+  }
+
+  .menu a.active {
+      background-color: #fff;
+      color: #444;
+      cursor: default;
+  }
+  
+  .uploadBtn{
+      padding:0 5px 0 10px;
+      text-align: center;
+      color: white;
+  }
+  
+
+  .uploadBtn:hover{
+    background-color:  #4a698d;
+  }
+
+  
+
+#fileUpload {
+    display: none;
+    height: 0;
+    width: 0;
+  }
+
+  
+  #fileUploadLabel {
+      
+      padding: 5px;
+  }
+
+/* main side nav menu*/
+
+.icon-bar {
+    width: 50px; /* Set a specific width */
+    height: 100%;
+    background-color: #555; /* Dark-grey background */
+    position: absolute;
+    right: 0px;
+    z-index: 2;
+}
+
+.icon-bar a {
+    display: block; /* Make the links appear below each other instead of side-by-side */
+    text-align: center; /* Center-align text */
+    padding: 16px; /* Add some padding */
+    transition: all 0.3s ease; /* Add transition for hover effects */
+    color: #FFFFFF; /* White text color */
+    font-size: 24px; /* Increased font-size */
+}
+
+.icon-bar a:hover {
+    background-color: #000; /* Add a hover color */
+}
+
+.active {
+    background-color: #4CAF50; /* Add an active/current color */
+}
+
+
+/*hidden side menu styling */
+
+.sidenav {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
+    width:0;
+    position: relative;
+    z-index: 2;
+    top:0;
+    left: 0;
+    background-color: #222;
+    overflow-x: hidden;
+    padding-top: 0px;
+    margin-right: 50px;
+    transition: 0.5s;
+    float: right;
+    
+}
+
+.sidenav ul{
+    list-style: none;
+}
+.mySideNavHeader{
+    background-color: rgba(134, 145, 160, 0.43);
+    text-align: center;
+    border:2px solid #333746;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 20px;
+    text-decoration: none;
+    font-size: 14px;
+    color: #C7C7C7;
+    display: block;
+    transition: 0.3s
+}
+
+/* .sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+} */
+
+/*.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}*/
+
+/*css for styling the 3d canvas*/
+#renderCanvas {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    touch-action: none;
+}
+
+/*media queries */
+
+@media screen and (min-width: 600px) {
+    .menu li {
+        width: 120px;
+        border-bottom: none;
+        height: 50px;
+        line-height: 50px;
+        font-size: 1em;
+    }
+    /* Option 1 - Display Inline */
+    .menu li {
+        display: inline-block;
+        margin-right: -4px;
+    }
+    #renderCanvas {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        touch-action: none;
+    }
+
+    @media screen and (max-height: 450px) {
+        .sidenav {padding-top: 15px;}
+        .sidenav a {font-size: 18px;}
+    }
+    
+}

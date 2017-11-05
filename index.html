@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>ElsiePropViewer</title>
+    <link rel="stylesheet" href="css\index.css">
+    <script src="scripts/sideNav.js"></script>
+    <script src="https://www.babylonjs.com/hand.minified-1.2.js"></script>
+    <script src="https://preview.babylonjs.com/cannon.js"></script>
+    <script src="https://preview.babylonjs.com/oimo.js"></script>
+    <script src="https://preview.babylonjs.com/babylon.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+    <img src="imgs/modsyLogoSolo001.png" id="logo" />
+
+    <nav class="menu">
+
+        <ul>
+            <li class="uploadBtn">
+                <input type="file" id="fileUpload" />
+                <label id="fileuUploadLabel" for="fileUpload">Load Prop</label>
+            </li>
+            <li class="home">
+                <a href="#">Home</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- icon menu-->
+
+    <div class="icon-bar">
+
+        <a href="#" span onclick="togNav()">
+            </span>
+            <i class="fa fa-gear"></i>
+        </a>
+
+    </div>
+
+    <!--slider menu  -->
+    <div id="mySidenav" class="sidenav">
+        <div class="mySideNavHeader">
+            <a href="#">Prop Settings</a>
+        </div>
+        <!--<a href="javascript: void(0)" class="closebtn" onclick="closeNav()">&times;</a>-->
+        <a href="#">Fabrics:</a>
+        <ul>
+            <li class="redFabric">
+                <img src="imgs/modsyLogoSolo001.png" id="logo" />
+            </li>
+        </ul>
+        <a href="#">Leather:</a>
+        <a href="#">Wood:</a>
+    </div>
+
+
+
+    <div class="canvas3d">
+        <canvas id="renderCanvas"></canvas>
+        <!-- <script src="scripts/test.js"></script> -->
+        <script src="scripts/main.js"></script>
+    </div>
+
+
+</body>
+
+</html>
