@@ -10,6 +10,8 @@
     <script src="https://preview.babylonjs.com/cannon.js"></script>
     <script src="https://preview.babylonjs.com/oimo.js"></script>
     <script src="https://preview.babylonjs.com/babylon.js"></script>
+    <script src=https://preview.babylonjs.com/inspector/babylon.inspector.bundle.js></script>
+    <script src="https://code.jquery.com/pep/0.4.3/pep.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
@@ -23,10 +25,13 @@
         <ul>
             <li class="uploadBtn">
                 <input type="file" id="fileUpload" />
-                <label id="fileuUploadLabel" for="fileUpload">Load Prop</label>
+                <label id="fileuUploadLabel" for="fileUpload">Import Prop</label>
             </li>
             <li class="home">
-                <a href="#">Home</a>
+                <a href="#">New Scene</a>
+            </li>
+            <li id="enableDebug">
+                <a href="#">Debug</a>
             </li>
         </ul>
     </nav>
@@ -64,6 +69,7 @@
         <canvas id="renderCanvas"></canvas>
         <!-- <script src="scripts/test.js"></script> -->
         <script src="scripts/main.js"></script>
+        <script src="scripts/enableDebug.js"></script>
     </div>
 
 
