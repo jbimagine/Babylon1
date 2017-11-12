@@ -4,7 +4,7 @@ This is a simple .babylon model viewer and texture changer (texture changer is i
 
 ## Getting Started
 
-to get started clone or download the file to your desktop.  
+to get started clone or download the zip to your desktop.  
 
 ### Prerequisites
 
