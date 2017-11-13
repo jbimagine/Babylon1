@@ -6,7 +6,7 @@
     <title>ElsiePropViewer</title>
     <link rel="stylesheet" href="css\index.css">
     <script src="scripts/sideNav.js"></script>
-    <script src="https://www.babylonjs.com/hand.minified-1.2.js"></script>
+    <!-- <script src="https://www.babylonjs.com/hand.minified-1.2.js"></script> -->
     <script src="https://preview.babylonjs.com/cannon.js"></script>
     <script src="https://preview.babylonjs.com/oimo.js"></script>
     <script src="https://preview.babylonjs.com/babylon.js"></script>
@@ -25,10 +25,11 @@
         <ul>
             <li class="uploadBtn">
                 <input type="file" id="fileUpload" />
-                <label id="fileuUploadLabel" for="fileUpload">Import Prop</label>
+                <label id="fileuUploadLabel" for="fileUpload">New Scene</label>
             </li>
-            <li class="home">
-                <a href="#">New Scene</a>
+            <li class="newScene">
+                <input type="file" id="fileUpload" />
+                <label id="fileUploadLabel" for="fileUpload">Import Prop</label>
             </li>
             <li id="enableDebug">
                 <a href="#">Debug</a>
@@ -67,9 +68,9 @@
 
     <div class="canvas3d">
         <canvas id="renderCanvas"></canvas>
-        <!-- <script src="scripts/test.js"></script> -->
+
         <script src="scripts/main.js"></script>
-        <script src="scripts/enableDebug.js"></script>
+
     </div>
 
 

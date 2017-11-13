@@ -1,157 +1,158 @@
-   /*main css */
-   html,
+/*main css */
+html,
 body {
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    margin: 0;
-    padding: 0;
-    background-color: #333;
-    
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  background-color: #b3b8bb;
 }
 
 #logo {
-    float: left;
-    /* display: inline-block; */
-    
-    margin-top: 10px;
-    width: 25px;
+  float: left;
+  /* display: inline-block; */
+
+  margin-top: 10px;
+  width: 25px;
 }
 
 .clear {
-    clear: both;
+  clear: both;
 }
 
 #nav {
-    width: 100%;
-    
+  width: 100%;
 }
 .menu {
-    background-color: #333;
-    height: 50px;
+  background-color: #333;
+  height: 40px;
 }
-.menu ul{
-    list-style: none;
-    padding: 0;
-    overflow: hidden;
-    margin: 0;
-  }
+.menu ul {
+  list-style: none;
+  padding: 0;
+  overflow: hidden;
+  margin: 0;
+}
 
-  .menu li{
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 1.2em;
-      line-height: 50px;
-      height: 50px;
-      width: 150px;
-      float:right;
-  }
+.menu li {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2em;
+  line-height: 40px;
+  height: 40px;
+  width: 150px;
+  float: right;
+}
 
-  .menu li a {
-      display: block;
-      color: white;
-      text-align: center;
-      text-decoration:none;
-  }
+.menu li a {
+  display: block;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
 
-  .menu li a:hover {
-      background-color:  #4a698d;
-  }
+.menu li a:hover {
+  background-color: #4a698d;
+}
 
-  .menu a.active {
-      background-color: #fff;
-      color: #444;
-      cursor: default;
-  }
-  
-  .uploadBtn{
-      padding:0 5px 0 10px;
-      text-align: center;
-      color: white;
-  }
-  
+.menu a.active {
+  background-color: #fff;
+  color: #444;
+  cursor: default;
+}
 
-  .uploadBtn:hover{
-    background-color:  #4a698d;
-  }
+.uploadBtn {
+  padding: 0 5px 0 10px;
+  text-align: center;
+  color: white;
+}
 
-  
+.uploadBtn:hover {
+  background-color: #4a698d;
+}
+
+.newScene {
+  padding: 0 5px 0 10px;
+  text-align: center;
+  color: white;
+}
+
+.newScene:hover {
+  background-color: #4a698d;
+}
 
 #fileUpload {
-    display: none;
-    height: 0;
-    width: 0;
-  }
+  display: none;
+  height: 0;
+  width: 0;
+}
 
-  
-  #fileUploadLabel {
-      
-      padding: 5px;
-  }
+#fileUploadLabel {
+  padding: 5px;
+}
 
 /* main side nav menu*/
 
 .icon-bar {
-    width: 50px; /* Set a specific width */
-    height: 100%;
-    background-color: #555; /* Dark-grey background */
-    position: absolute;
-    right: 0px;
-    z-index: 2;
+  width: 50px; /* Set a specific width */
+  height: 100%;
+  background-color: #555; /* Dark-grey background */
+  position: absolute;
+  right: 0px;
+  z-index: 2;
 }
 
 .icon-bar a {
-    display: block; /* Make the links appear below each other instead of side-by-side */
-    text-align: center; /* Center-align text */
-    padding: 16px; /* Add some padding */
-    transition: all 0.3s ease; /* Add transition for hover effects */
-    color: #FFFFFF; /* White text color */
-    font-size: 24px; /* Increased font-size */
+  display: block; /* Make the links appear below each other instead of side-by-side */
+  text-align: center; /* Center-align text */
+  padding: 16px; /* Add some padding */
+  transition: all 0.3s ease; /* Add transition for hover effects */
+  color: #ffffff; /* White text color */
+  font-size: 24px; /* Increased font-size */
 }
 
 .icon-bar a:hover {
-    background-color: #000; /* Add a hover color */
+  background-color: #000; /* Add a hover color */
 }
 
 .active {
-    background-color: #4CAF50; /* Add an active/current color */
+  background-color: #4caf50; /* Add an active/current color */
 }
-
 
 /*hidden side menu styling */
 
 .sidenav {
-    font-family: Arial, Helvetica, sans-serif;
-    height: 100%;
-    width:0;
-    position: relative;
-    z-index: 2;
-    top:0;
-    left: 0;
-    background-color: #222;
-    overflow-x: hidden;
-    padding-top: 0px;
-    margin-right: 50px;
-    transition: 0.5s;
-    float: right;
-    
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100%;
+  width: 0;
+  position: relative;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  background-color: #222;
+  overflow-x: hidden;
+  padding-top: 0px;
+  margin-right: 50px;
+  transition: 0.5s;
+  float: right;
 }
 
-.sidenav ul{
-    list-style: none;
+.sidenav ul {
+  list-style: none;
 }
-.mySideNavHeader{
-    background-color: rgba(134, 145, 160, 0.43);
-    text-align: center;
-    border:2px solid #333746;
+.mySideNavHeader {
+  background-color: rgba(134, 145, 160, 0.43);
+  text-align: center;
+  border: 2px solid #333746;
 }
 
 .sidenav a {
-    padding: 8px 8px 8px 20px;
-    text-decoration: none;
-    font-size: 14px;
-    color: #C7C7C7;
-    display: block;
-    transition: 0.3s
+  padding: 8px 8px 8px 20px;
+  text-decoration: none;
+  font-size: 14px;
+  color: #c7c7c7;
+  display: block;
+  transition: 0.3s;
 }
 
 /* .sidenav a:hover, .offcanvas a:focus{
@@ -168,37 +169,40 @@ body {
 
 /*css for styling the 3d canvas*/
 #renderCanvas {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    touch-action: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  touch-action: none;
 }
 
 /*media queries */
 
 @media screen and (min-width: 600px) {
-    .menu li {
-        width: 120px;
-        border-bottom: none;
-        height: 50px;
-        line-height: 50px;
-        font-size: 1em;
-    }
-    /* Option 1 - Display Inline */
-    .menu li {
-        display: inline-block;
-        margin-right: -4px;
-    }
-    #renderCanvas {
-        position: fixed;
-        width: 100%;
-        height: 100%;
-        touch-action: none;
-    }
+  .menu li {
+    width: 120px;
+    border-bottom: none;
+    height: 40px;
+    line-height: 42px;
+    font-size: 1em;
+  }
+  /* Option 1 - Display Inline */
+  .menu li {
+    display: inline-block;
+    margin-right: -4px;
+  }
+  #renderCanvas {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    touch-action: none;
+  }
 
-    @media screen and (max-height: 450px) {
-        .sidenav {padding-top: 15px;}
-        .sidenav a {font-size: 18px;}
+  @media screen and (max-height: 450px) {
+    .sidenav {
+      padding-top: 15px;
     }
-    
+    .sidenav a {
+      font-size: 18px;
+    }
+  }
 }
